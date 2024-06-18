@@ -1,26 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <h1>Inventario</h1>
+    <ClienteComponent />
+    <ProductoComponent />
+    <ProveedorComponent />
+    <VentaComponent />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ClienteComponent from './components/ClienteComponent.vue';
+import ProductoComponent from './components/ProductoComponent.vue';
+import ProveedorComponent from './components/ProveedorComponent.vue';
+import VentaComponent from './components/VentaComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ClienteComponent,
+    ProductoComponent,
+    ProveedorComponent,
+    VentaComponent
   }
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
